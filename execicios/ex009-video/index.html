@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+
+<body>
+    <h1>Inserindo vídeos localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video width="1300" poster="image/tumb.png" controls loop>
+        <source src="midia/video.webm" type="video/webm">
+        <source src="midia/video.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+    </video>
+
+    <h1>Inserindo vídeos do TikTok</h1>
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@viniblogger/video/7502850179482111238" data-video-id="7502850179482111238" style="max-width: 605px;min-width: 325px;"> 
+        <section> 
+            <a target="_blank" title="@viniblogger" href="https://www.tiktok.com/@viniblogger?refer=embed">@viniblogger</a> O roteiro, vídeo feito em cooperação com Creators!! <a title="viniblogger" target="_blank" href="https://www.tiktok.com/tag/viniblogger?refer=embed">#viniblogger</a> <a target="_blank" title="♬ som original - Viniblogger" href="https://www.tiktok.com/music/som-original-7502850190744537911?refer=embed">♬ som original - Viniblogger</a> 
+        </section> 
+    </blockquote> 
+    <script async src="https://www.tiktok.com/embed.js"></script>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jPWsBuiy1rE?si=S6sxyawwdeV_nJkw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Fromatação de Textos</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+
+        mark {
+            background-color: lime;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa frase temos um <b>termo em Negrito</b> unsando "B" (não semantica, não tem significado só forma)</p>
+    <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag "STRONG" (semantica com significado)</p>
+    <h2>Italico / Enfase</h2>
+    <p>Nessa frase, temos um <i>termo em itálico</i> usando a tag "I" (não semantica, não tem significado só forma)</p>
+    <!--use a soft key ctrl+shift+p, para usar a tag em frases feitas-->
+    <p>Nessa frase, temos um <em>termo em Enfase</em> usando a tag "EM" (semantica com significado)</p>
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar tambem <mark>um texto marcado</mark> usando a tag (MARK)</p>
+    <p>E no outro parágrafo, temos <mark style=>outro texto marcado</mark> no final</p>
+    <!-- Use o comando "mark style="backgrud-color: a cor"" para mudar a cor de um mark especifico-->
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small></p>
+    <h2>Texto excluído</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como iserido</ins> para dar uma ênfase a indicar que ele foi adicionado depois.</p>
+    <p>Existe também o <u>texto sublinhado</u> com a tag, mas sem u signicado (não semantico)</p>
+    <h2>Texto sobescrito</h2>
+    <p>para enserir coisas do tipo <mark>x<sup>20</sup>÷3</mark></p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo<mark> H<sub>2</sub>O</mark></p>
+    <h2>Código-fonte / Pré-Formatado</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrtito em linguagem JavaScript.</p>
+    <pre>
+        <code>
+    num = int(input('Digte um número'))
+    if num % 2 == 0:
+        print(f'O némero{num} é PAR')
+    else:
+        print('f'O número {num} é Ímpar')
+    print('Fim do programa')
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <p>Como diria po pai de um amigo: <q>O computador é um burro muito rápido</q></p>
+    <!--Aspas com signifado, sitações-->
+    <h2>Citações completas</h2>
+    <p>Segundo Friedrich Nietzsche:</p>
+    <blockquote cite="https://www.pensador.com/autor/friedrich_nietzsche/">A vantagem de ter péssima memória é divertir-se muitas vezes com as mesmas coisas boas como se fosse a primeira vez.</blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudado <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheet">CSS</abbr>. Estou odiando</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+</body>
+
+</html>
