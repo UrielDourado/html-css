@@ -2,13 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap");
 
 :root {
-  --font-titulo: "Passion One", sans-serif;
-  --font-cordel: "Sriracha", sans-serif;
+  --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+  --font-titulo: "Passion One", cursive;
+  --font-cordel: "Sriracha", cursive;
 }
 
 * {
   margin: 0px;
   padding: 0px;
+  font-size: 1em;
 }
 html,
 body {
@@ -24,12 +26,14 @@ header > h1 {
   padding-top: 50px;
   font-variant: small-caps;
   font-family: var(--font-titulo);
-  font-size: 153px;
+  font-size: 10vw;
+  /* usando a medida vw para se adequar para celular */
 }
 header > p {
   padding-bottom: 50px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--fonte-padrao);
   font-size: 1em;
+  
 }
 a {
   color: white;
@@ -46,7 +50,10 @@ section{
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--font-cordel);
-    font-size: 53px;
+    font-size: 3.5vw;
+}
+section p {
+  padding-bottom: 1.5em;
 }
 section.normal {
     background-color: white;
@@ -55,23 +62,25 @@ section.normal {
 section.image01 {
     background-color: rgb(83, 83, 83);
     color: white;
-    background: black url(../imagens/background001.jpg) center center no-repeat fixed;
+    background: black url(../imagens/background001.jpg) right center no-repeat fixed;
     background-size: cover;
 }
 
 section.image02 {
     background-color: rgb(83, 83, 83);
     color: white;
-    background: black url(../imagens/background002.jpg) center center no-repeat fixed;
+    background: black url(../imagens/background002.jpg) right center no-repeat fixed;
     background-size: cover;
 }
 section.image01 > p {
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.247);
-    width: 400px;
+    text-shadow: 1px 1px px black;
 }
 section.image02 > p {
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.247);
-    width: 400px;
+    text-shadow: 1px 1px px black;
 }
 
 footer {
