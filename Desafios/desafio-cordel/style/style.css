@@ -52,11 +52,24 @@ section.normal {
     background-color: white;
     color: black;
 }
-section.image {
+section.image01 {
     background-color: rgb(83, 83, 83);
     color: white;
+    background: black url(../imagens/background001.jpg) center center no-repeat fixed;
+    background-size: cover;
 }
-section.image > p {
+
+section.image02 {
+    background-color: rgb(83, 83, 83);
+    color: white;
+    background: black url(../imagens/background002.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+section.image01 > p {
+    background-color: rgba(0, 0, 0, 0.247);
+    width: 400px;
+}
+section.image02 > p {
     background-color: rgba(0, 0, 0, 0.247);
     width: 400px;
 }
