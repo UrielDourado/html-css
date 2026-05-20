@@ -17,20 +17,39 @@
             width: 600px;
             border-collapse: collapse;
             margin: auto;
+            position: relative;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+        /* Essa pseudo classe (nth-child(odd = par ou even = impar)) */
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(73, 73, 73);
+            /* essa configuração faz o cabeçalho ficar fixo, juntamente com a mudança na classe table, transformando a position em relative */
         }
 
         th {
-            background-color: grey;
+            background-color: rgb(73, 73, 73);
             border: 1px solid black;
             padding: 10px;
+            color: white;
         }
 
         td {
             border: 1px solid black;
+            height: 50px;
         }
         tfoot td {
             text-align: right;
             font-weight: bolder;
+        }
+        caption {
+            background-color: rgb(170, 169, 169);
+            font-size: x-large;
+            font-weight: bold;
+            border-radius: 10px 10px 0px 0px;
         }
     </style>
 </head>
@@ -39,6 +58,7 @@
     <h1>Hierarquia de Tabelas</h1>
     <!-- Anatomia de tabelas
      TABLE
+        CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -48,11 +68,12 @@
      -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Numero</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col" style=" width: 30px;">Numero</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -194,9 +215,10 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td colspan="2">12 324 957</td>
-                <!-- colspan = mescla as células -->
+                <th colspan="2" scope="row">Total de Habitantes</th>
+                <td>12 324 957</td>
+                <!-- colspan = mescla as células
+                     rowspan = mescla as linhas -->
             </tr>
         </tfoot>
     </table>
