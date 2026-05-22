@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center; 
+        align-items: center;     
+        min-height: 100vh;       
+        background-color: #f0f0f0; 
+    }
+
+    div {
+        background-color: #b4afaf;
+        padding: 40px;
+        width: 50%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        margin: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .imagem-escondida {
+        display: none;
+        max-width: 100%;
+        height: auto;
+    }
+
+    
+    div:hover .imagem-escondida {
+        display: block;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <p><a href="w0fu52c6a8t61.jpg">NÃO CLICK</a></p>
+        <img class="imagem-escondida" src="w0fu52c6a8t61.jpg" alt="Imagem surpresa">
+    </div>
+</body>
+</html>
